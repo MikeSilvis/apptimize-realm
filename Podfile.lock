@@ -1,0 +1,20 @@
+PODS:
+  - Apptimize (2.16.10)
+  - Realm (1.0.2):
+    - Realm/Headers (= 1.0.2)
+  - Realm/Headers (1.0.2)
+  - RealmSwift (1.0.2):
+    - Realm (= 1.0.2)
+
+DEPENDENCIES:
+  - Apptimize
+  - RealmSwift
+
+SPEC CHECKSUMS:
+  Apptimize: 2eb872638bdd5623206aba10458788ef6e65f755
+  Realm: 9d5c46a4d7d27958530a8dfc58f63a99e5c2cba3
+  RealmSwift: 82f3ac5e24530143dddfde2033acc0d308f27d96
+
+PODFILE CHECKSUM: eda955d6c20527e9231e0e219b0c0da46050743c
+
+COCOAPODS: 1.0.1

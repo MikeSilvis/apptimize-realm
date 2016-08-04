@@ -13,9 +13,11 @@
 		363AA9891D53D12900666913 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 363AA9871D53D12900666913 /* Main.storyboard */; };
 		363AA98B1D53D12900666913 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 363AA98A1D53D12900666913 /* Assets.xcassets */; };
 		363AA98E1D53D12900666913 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 363AA98C1D53D12900666913 /* LaunchScreen.storyboard */; };
+		39FD2D2F1C6DEBB4CDBCFBD5 /* Pods_TestApptimize.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F0092A263A671AA7D76AD2CC /* Pods_TestApptimize.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0C5D7220565A6F1BA5D9B85F /* Pods-TestApptimize.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestApptimize.release.xcconfig"; path = "Pods/Target Support Files/Pods-TestApptimize/Pods-TestApptimize.release.xcconfig"; sourceTree = "<group>"; };
 		363AA97E1D53D12900666913 /* TestApptimize.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestApptimize.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		363AA9811D53D12900666913 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		363AA9831D53D12900666913 /* MasterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterViewController.swift; sourceTree = "<group>"; };
@@ -24,6 +26,8 @@
 		363AA98A1D53D12900666913 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		363AA98D1D53D12900666913 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		363AA98F1D53D12900666913 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7D3B5650B11B02454555C543 /* Pods-TestApptimize.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestApptimize.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TestApptimize/Pods-TestApptimize.debug.xcconfig"; sourceTree = "<group>"; };
+		F0092A263A671AA7D76AD2CC /* Pods_TestApptimize.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TestApptimize.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +35,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				39FD2D2F1C6DEBB4CDBCFBD5 /* Pods_TestApptimize.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		21EDC15D7F700E2C4FCEE5E9 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7D3B5650B11B02454555C543 /* Pods-TestApptimize.debug.xcconfig */,
+				0C5D7220565A6F1BA5D9B85F /* Pods-TestApptimize.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		363AA9751D53D12900666913 = {
 			isa = PBXGroup;
 			children = (
 				363AA9801D53D12900666913 /* TestApptimize */,
 				363AA97F1D53D12900666913 /* Products */,
+				21EDC15D7F700E2C4FCEE5E9 /* Pods */,
+				E5355C1120C64293E849C294 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,6 +83,14 @@
 			path = TestApptimize;
 			sourceTree = "<group>";
 		};
+		E5355C1120C64293E849C294 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F0092A263A671AA7D76AD2CC /* Pods_TestApptimize.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,9 +98,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 363AA9921D53D12900666913 /* Build configuration list for PBXNativeTarget "TestApptimize" */;
 			buildPhases = (
+				67E70309DF3687AE9A08616A /* [CP] Check Pods Manifest.lock */,
 				363AA97A1D53D12900666913 /* Sources */,
 				363AA97B1D53D12900666913 /* Frameworks */,
 				363AA97C1D53D12900666913 /* Resources */,
+				3C1E154552E1A68B557DDBD1 /* [CP] Embed Pods Frameworks */,
+				DC1C247565F53B1E80137D32 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -132,6 +159,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3C1E154552E1A68B557DDBD1 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TestApptimize/Pods-TestApptimize-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		67E70309DF3687AE9A08616A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		DC1C247565F53B1E80137D32 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TestApptimize/Pods-TestApptimize-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		363AA97A1D53D12900666913 /* Sources */ = {
@@ -253,6 +328,7 @@
 		};
 		363AA9931D53D12900666913 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7D3B5650B11B02454555C543 /* Pods-TestApptimize.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = TestApptimize/Info.plist;
@@ -264,6 +340,7 @@
 		};
 		363AA9941D53D12900666913 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0C5D7220565A6F1BA5D9B85F /* Pods-TestApptimize.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = TestApptimize/Info.plist;
@@ -292,6 +369,7 @@
 				363AA9941D53D12900666913 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
